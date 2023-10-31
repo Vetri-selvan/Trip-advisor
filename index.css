@@ -1,0 +1,259 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap');
+
+img{
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover  ;
+}
+header{
+    background-color:rgb(236, 236, 236) ;
+    
+}
+.logo  a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav a{
+    color: black;
+    font-weight:600;
+}
+.nav a:hover{
+    color: red;
+}
+#menu{
+display: none;
+}
+.menubtn{
+    display: none;
+}
+/*  */
+.img1 img{
+    height: 100vh;
+    position: relative;
+}
+.img1-text{
+position: absolute;
+top: 50%;
+left: 40%;
+font-style:bold ;
+color: white;
+
+}
+.img1-text h5{
+    color: black;
+}
+.img1-text button:last-child{
+    border: 2px solid white;
+   font-weight: 700;
+}
+.text-underline a{
+color: rgb(55, 246, 246);
+text-decoration: none;
+}
+.text-underline a:hover{
+    color: rgb(0, 166, 255);
+}
+.text-underline p{
+    padding: 1.5rem;
+}
+.text-underline a{
+    padding: 1.5rem;
+}
+.para{
+    margin-top:7rem ;
+}
+/*  */
+.img2{
+    position: relative;
+ margin-top: 5rem;
+}
+.img2 img{
+    height: 400px;
+}
+
+.img2-text{
+    position:absolute;
+    top: 30%;
+    left: 37%;
+    color: white;
+    font-weight: bold;
+}
+/*  */
+.countaries{
+    margin-top: 5rem;
+}
+.countaries a{
+    color: white;
+    text-decoration: none;
+}
+.countaries a:hover{
+    color:rgb(108, 47, 47);
+}
+.box1{
+    background-image: linear-gradient(to right, rgb(4, 255, 129),rgba(0, 255, 204, 0.873));
+    color: white;
+}
+.box2{
+    background-image: linear-gradient(to right,rgb(0, 112, 232),rgb(0, 123, 255));
+    color: white;
+}
+.box3{
+    background-image: linear-gradient(to right,rgb(255, 36, 2),rgb(255, 0, 115));
+    color: white;
+}
+/*  */
+.typetravel{
+    margin-top: 8rem;
+}
+.typetravel a{
+    text-decoration: none;
+    color: cyan;
+}
+.typetravel img{
+    height: 230px;
+}
+
+/*  */
+.blog{
+    margin-top:8rem ;
+}
+.blog img{
+    height: 230px;
+}
+.blog a{
+    text-decoration: none;
+    color: cyan;
+}
+
+/*  */
+.footer{
+    margin-top: 10rem;
+    background-color: rgb(204, 240, 252);
+   
+}
+.footer a{
+    text-decoration: none;
+   color:rgb(108, 47, 47);
+   font-weight: bold;
+}
+.footer .info {
+    margin-top: 5rem;
+}
+.footer .info a{
+    display: flex;
+}
+/* .footer .info a:hover{
+   
+} */
+.footer .blog{
+    margin-top: 5rem;
+}
+.footer .blog{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.footer .links{
+    margin-top: 5rem;
+}
+.footer .links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.footer .socialmedia{
+    margin-top: 5rem;
+}
+.footer .socialmedia{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    
+}
+.footer .socialmedia a{
+display: flex;
+column-gap: 1rem;
+
+}
+
+.footer .socialmedia a:hover{
+    transform: scale(1.1);
+}
+.footer .socialmedia i{
+   
+   
+    font-size: 30px;
+}
+.footer .socialmedia i:hover{
+    
+    transform: scale(1.1);
+   
+}
+
+@media screen and (max-width:700px) {
+    .img1-text{
+        left: 12%;
+    }
+    .img2-text{
+        left: 12%;
+    }
+    .menubtn #close-icon{
+        display: none;
+    }
+    .menubtn{
+        display: inherit;
+        font-size: 25px;
+        
+
+        
+    }
+
+    .nav {
+        position: fixed;
+        top: 7%;
+        left: 0;
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        gap: 50px;
+       background-color: rgb(236, 236, 236);
+       right: 0;
+        padding-top: 50px;
+        align-items: center;
+        transition: all .3s ease;
+        clip-path: circle(0% at 144% 0%);
+       
+    }
+    #menu:checked ~.nav {
+        background-color: white;
+       /* left: -100%; */
+       clip-path:circle(144% at 10% 20%);
+       transition: all 1s;
+      
+      }
+      
+      #menu:checked~.menubtn #menu-icon{
+        display: none;
+      }
+      #menu:checked~.menubtn #close-icon{
+        display: block;
+        
+      }
+  
+     
+    
+
+}
